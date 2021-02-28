@@ -52,7 +52,7 @@ Prisma.raw = raw
 Prisma.validator = () => (val) => val
 
 
-const dirnamePolyfill = path.join(process.cwd(), "prisma/database")
+const dirnamePolyfill = path.join(process.cwd(), "prisma\\database")
 const dirname = __dirname.length === 1 ? dirnamePolyfill : __dirname
 
 /**
@@ -137,15 +137,14 @@ const config = {
   "generator": {
     "name": "client",
     "provider": "prisma-client-js",
-    "output": "/home/renan/Documentos/UFRJ/Pós Graduação/Arquitetura de Serviços/Trabalhos/02 - RESTful/prisma/database",
+    "output": "C:\\Users\\Raphael\\Desktop\\MBA\\Arquitetura de Serviço\\trabalho-rest\\restful\\prisma\\database",
     "binaryTargets": [],
     "previewFeatures": [],
     "config": {},
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
-    "schemaEnvPath": "../../.env"
+    "rootEnvPath": null
   },
   "sqliteDatasourceOverrides": [],
   "relativePath": "..",
@@ -179,12 +178,12 @@ Object.assign(exports, Prisma)
  * In order to make `ncc` and `@vercel/nft` happy.
  * The process.cwd() annotation is only needed for https://github.com/vercel/vercel/tree/master/packages/now-next
 **/
-path.join(__dirname, 'query-engine-debian-openssl-1.1.x');
-path.join(process.cwd(), './prisma/database/query-engine-debian-openssl-1.1.x');
+path.join(__dirname, 'query-engine-windows');
+path.join(process.cwd(), './prisma\database\query-engine-windows');
 
 /**
  * Annotation for `@vercel/nft`
  * The process.cwd() annotation is only needed for https://github.com/vercel/vercel/tree/master/packages/now-next
 **/
 path.join(__dirname, 'schema.prisma');
-path.join(process.cwd(), './prisma/database/schema.prisma');
+path.join(process.cwd(), './prisma\database\schema.prisma');
